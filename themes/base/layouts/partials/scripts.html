@@ -1,0 +1,5 @@
+{{ $apiKey := getenv "HUGO_SNIPCART_PUBLIC_API_KEY" }}
+{{ if ne $apiKey "main" }}
+  <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="{{ $apiKey }}"></div>
+{{ end }}

@@ -1,0 +1,8 @@
+<section>
+  <h2>Produtos</h2>
+  <div class="grid grid-cols-3">
+    {{ range .Site.Data.products }}
+      {{ partial "product" . }}
+    {{ end }}
+  </div>
+</section>

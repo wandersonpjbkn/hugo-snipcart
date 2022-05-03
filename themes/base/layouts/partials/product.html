@@ -1,0 +1,23 @@
+<div>
+  <h4>{{ .name }}</h4>
+
+  {{ with .image }}
+    <img src="{{ . }}" alt="{{ .name }}">
+  {{ end }}
+
+  <p>{{ .description }}</p>
+
+  <p>
+    <span>R$</span>
+    <span>{{ .price }}</span>
+  </p>
+
+  <button
+    data-item-id="{{ .id }}"
+    data-item-name="{{ .name }}"
+    data-item-price="{{ .price }}"
+    data-item-url="{{ .product_url }}"
+    data-item-description="{{ .description }}">
+    Adicionar
+  </button>
+</div>

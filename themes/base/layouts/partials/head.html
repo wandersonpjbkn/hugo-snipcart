@@ -1,0 +1,20 @@
+<head>
+  <!-- default -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+  <!-- snipcart -->
+  <script src="<https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js>"></script>
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" type="text/css" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+  
+  <!-- tailwindcss -->
+  {{ $style := resources.Get "style.css" }}    
+  <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+
+  <!-- others -->
+  <title>{{ .Title }}</title>
+</head>
